@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Courier+Prime:wght@400;700&family=Kaushan+Script&family=Poppins:wght@400;700&display=swap");
+:root {
+  --Main-color: #28002c;
+  --Sec-color: #8b00c5;
+  --Accent-color: #afef26;
+  --font-courier: "Courier Prime", monospace;
+  --font-Kaushan: "Kaushan Script", cursive;
+  --font-Neue: "Bebas Neue", sans-serif;
+  --font-Poppins: "Poppins", sans-serif;
+}
+#canvas {
+  filter: blur(1px);
+  position: absolute;
+  height: 100% !important;
+}
+html {
+  background: var(--Main-color);
+  /* margin-bottom: 80px !important; */
+}
+section {
+  min-height: 95vh;
+  /* max-height: 100vh !important; */
+}
+#porto_example {
+  position: absolute;
+  width: 100% !important;
+  height: auto !important;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -99;
+}
+#porto_frontground {
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100% !important;
+  height: auto !important;
+  background: linear-gradient(
+    308deg,
+    rgba(32, 12, 40, 1) 22%,
+    rgba(32, 12, 40, 0) 100%
+  );
+}
+.title {
+  color: #afef26;
+  font-family: var(--font-Neue);
+}
+.profile_info {
+  color: #fff;
+  text-shadow: 0px 0px 4px var(--Sec-color);
+  font-family: var(--font-courier);
+}
+.socmed_text {
+  color: #fff;
+  text-shadow: 0px 0px 4px var(--Accent-color);
+  font-family: var(--font-courier);
+  font-weight: 700;
+}
+.green_text {
+  color: var(--Accent-color);
+}
+.purple_text {
+  font-weight: 700;
+  color: var(--Sec-color);
+  text-shadow: none;
+}
+#scrollIco::before {
+  content: "Scroll";
+  position: absolute;
+  top: 50%;
+  right: -70px;
+  transform: translateY(-50%);
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+}
+#scrollIco::after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50px;
+  background: #fff;
+  animation: scrollIcoAnim 2s ease-in-out infinite;
+}
+@keyframes scrollIcoAnim {
+  0%,
+  100% {
+    bottom: 5px;
+  }
+  50% {
+    bottom: 30px;
+  }
+}
+#scrollIco {
+  position: relative;
+  width: 43px;
+  height: 95px;
+  border: 3px solid #fff;
+  border-radius: 50px;
+  transform: scale(0.7);
+}
+scrollIcoCont {
+  margin: auto !important;
+}
+#PriceList h1 {
+  color: #fff;
+  text-shadow: 0px 0px 7px var(--Sec-color);
+}
+#PL::after {
+  content: "";
+  width: 200px;
+  height: 3px;
+  border-radius: 10px;
+  position: absolute;
+  bottom: -3px;
+  left: 0px;
+  border-bottom: 3px solid #fff;
+}
+#PL {
+  align-items: center;
+  position: relative;
+  margin-top: 20px;
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-between !important;
+  align-content: center !important;
+}
+#PLTitle {
+  color: var(--Sec-color) !important;
+  text-shadow: none !important;
+  font-family: var(--font-Kaushan);
+}
+#CurrencyDetail {
+  font-family: var(--font-courier);
+  font-size: 15px;
+  color: var(--Sec-color) !important;
+  font-weight: 700;
+}
+#amnt {
+  font-family: var(--font-courier);
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff !important;
+}
+#PLDetail {
+  margin-top: 20px;
+  font-family: var(--font-courier);
+  color: #fff;
+  margin-left: 20px;
+  max-width: 500px;
+}
+#PLDetail li {
+  list-style-type: disc !important;
+}
+#PLDetail span {
+  font-weight: 700;
+  color: var(--Accent-color);
+}
+#PricelistMenu {
+  margin-top: 20px;
+}
